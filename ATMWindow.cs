@@ -16,7 +16,6 @@ namespace ATMSimulator
         private String state = "account";
         private Account[] account1;
 
-
         public ATMWindow(Account[] ac)
         {
             this.account1 = ac;
@@ -106,7 +105,10 @@ namespace ATMSimulator
                 if (account1[accountNum].checkPin(Convert.ToInt32(TxtInput.Text)) == true)
                 {
                     state = "balance";
-                    LblInstruction.Text = "What would you like to do:\n[1] View your balance\n[2] Take out money\n[3] Exit";
+                    LblInstruction.Text = "What would you like to do:";
+                    lblMiddleLeft.Text = "View Balance";
+                    lblBottomLeft.Text = "Take out money";
+                    lblBottomRight.Text = "Exit";
                     LblInput.Text = "Correct pin entered";
                 }
 
@@ -122,47 +124,16 @@ namespace ATMSimulator
 
             else if (state == "balance" && TxtInput.TextLength == 1)
             {
-                LblInstruction.Text = "What would you like to do:\n[1] View your balance\n[2] Take out money\n[3] Exit";
-                if (TxtInput.Text == "1")
-                {
-                    lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
-                }
-
-                else if (TxtInput.Text == "2")
-                {
-                    lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
-                    LblInstruction.Text = "How much money would you like to take out";
-                    state = "takeOut";
-                }
-                else if (TxtInput.Text == "3")
-                {
-                    state = "account";
-                    accountNum = 100;
-                    LblInput.Text = "Logged out account";
-                    LblInstruction.Text = "Enter account number:";
-                    lblBalance.Text = "";
-                }
+                LblInstruction.Text = "What would you like to do:";
+                lblMiddleLeft.Text = "View Balance";
+                lblBottomLeft.Text = "Take out money";
+                lblBottomRight.Text = "Exit";
             }
 
-            else if (state == "balance" && TxtInput.TextLength != 1)
+            if (state == "unique")
             {
-                LblInput.Text = "Invalid input";
-            }
-
-            else if (state == "takeOut")
-            {
-                if (account1[accountNum].decrementBalance(Convert.ToInt32(TxtInput.Text)) == true)
-                {
-                    int newBal;
-                    newBal = account1[accountNum].getBalance() - Convert.ToInt32(TxtInput.Text);
-                    account1[accountNum].setBalance(newBal);
-                    lblBalance.Text = "Your new balance is " + Convert.ToString(account1[accountNum].getBalance());
-                    state = "balance";
-                }
-                else
-                {
-                    LblInput.Text = "Insufficient funds";
-                }
+                takeOutMoney(Convert.ToInt32(TxtInput.Text));
+                state = "account";
             }
 
             TxtInput.Clear();
@@ -171,6 +142,106 @@ namespace ATMSimulator
         private void BtnKeyCancel_Click(object sender, EventArgs e)
         {
             TxtInput.Clear();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result;
+            result = MessageBox.Show("ATM Simulator created by Jonny Cormack, Heather Currie and Matthew Gallacher.", "About", MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void btnBottomRight_Click(object sender, EventArgs e)
+        {
+            state = "account";
+            accountNum = 100;
+            LblInput.Text = "Logged out account";
+            LblInstruction.Text = "Enter account number:";
+            lblBalance.Text = "";
+            lblBottomLeft.Text = "";
+            lblMiddleLeft.Text = "";
+            lblBottomRight.Text = "";
+            lblTopLeft.Text = "";
+            lblTopRight.Text = "";
+            lblMiddleRight.Text = "";
+        }
+
+        private void BtnMiddleLeft_Click(object sender, EventArgs e)
+        {
+            if (state == "takeOut")
+            {
+                account1[accountNum].decrementBalance(20);
+            }
+            lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+        }
+
+        private void btnBottomLeft_Click(object sender, EventArgs e)
+        {
+            if (state == "takeOut")
+            {
+                takeOutMoney(50);
+            }
+
+            else if (state == "balance")
+            {
+                lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+                lblTopLeft.Text = "£10";
+                lblMiddleLeft.Text = "£20";
+                lblBottomLeft.Text = "£50";
+                lblTopRight.Text = "£100";
+                lblMiddleRight.Text = "Unique Amount";
+                state = "takeOut";
+            }
+        }
+
+        private void btnTopLeft_Click(object sender, EventArgs e)
+        {
+            if (state == "takeOut")
+            {
+                takeOutMoney(10);
+            }
+        }
+
+        private void takeOutMoney(int amount)
+        {
+            if (account1[accountNum].decrementBalance(amount) == true)
+            {
+                state = "account";
+                lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+                clear();
+            } else
+            {
+                LblInput.Text = "Insufficent funds";
+            } 
+        }
+
+        private void BtnTopRight_Click(object sender, EventArgs e)
+        {
+            if (state == "takeOut")
+            {
+                takeOutMoney(100);
+            }
+        }
+
+        private void btnMiddleRight_Click(object sender, EventArgs e)
+        {
+            if (state == "takeOut")
+            {
+                LblInstruction.Text = "How much to take out:";
+                state = "unique";
+            }
+        }
+
+        private void clear()
+        {
+            LblInput.Text = "Logged out account";
+            LblInstruction.Text = "Enter account number:";
+            lblBalance.Text = "";
+            lblBottomLeft.Text = "";
+            lblMiddleLeft.Text = "";
+            lblBottomRight.Text = "";
+            lblTopLeft.Text = "";
+            lblTopRight.Text = "";
+            lblMiddleRight.Text = "";
         }
     }
 }

@@ -27,8 +27,6 @@ namespace ATMSimulator
             ac[2] = new Account(3000, 3333, 333333);
         }
 
-        
-
         [STAThread]
         public static void Main()
         {
