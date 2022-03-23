@@ -12,393 +12,165 @@ namespace ATMSimulator
 {
     public partial class ATMWindow : Form
     {
-        int[] playerInput = new int[0];
-        private int fullInput;
+        private int accountNum;
+        private String state = "account";
+        private Account[] account1;
 
-        public ATMWindow()
+
+        public ATMWindow(Account[] ac)
         {
+            this.account1 = ac;
             InitializeComponent();
-        }
-
-
-        /*
-     *   This is the root of program and the entry point
-     * 
-     *   Class programm contains an array of account objects and a singel ATM object  
-     * 
-     */
-        class Program
-        {
-            private Account[] ac = new Account[3];
-            private ATM atm;
-
-            /*
-             * This function initilises the 3 accounts 
-             * and instanciates the ATM class passing a referance to the account information
-             * 
-             */
-            public Program()
-            {
-                ac[0] = new Account(300, 1111, 111111);
-                ac[1] = new Account(750, 2222, 222222);
-                ac[2] = new Account(3000, 3333, 333333);
-
-                atm = new ATM(ac);
-
-            }
-        }
-
-        /*
-     *   The Account class encapusulates all features of a simple bank account
-     */
-        class Account
-        {
-            //the attributes for the account
-            private int balance;
-            private int pin;
-            private int accountNum;
-
-            // a constructor that takes initial values for each of the attributes (balance, pin, accountNumber)
-            public Account(int balance, int pin, int accountNum)
-            {
-                this.balance = balance;
-                this.pin = pin;
-                this.accountNum = accountNum;
-            }
-
-            //getter and setter functions for balance
-            public int getBalance()
-            {
-                return balance;
-            }
-            public void setBalance(int newBalance)
-            {
-                this.balance = newBalance;
-            }
-
-            /*
-             *   This funciton allows us to decrement the balance of an account
-             *   it perfomes a simple check to ensure the balance is greater tha
-             *   the amount being debeted
-             *   
-             *   reurns:
-             *   true if the transactions if possible
-             *   false if there are insufficent funds in the account
-             */
-            public Boolean decrementBalance(int amount)
-            {
-                if (this.balance > amount)
-                {
-                    balance -= amount;
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-
-            /*
-             * This funciton check the account pin against the argument passed to it
-             *
-             * returns:
-             * true if they match
-             * false if they do not
-             */
-            public Boolean checkPin(int pinEntered)
-            {
-                if (pinEntered == pin)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            public int getAccountNum()
-            {
-                return accountNum;
-            }
-
-        }
-        /* 
-         *      This is out main ATM class that preforms the actions outlined in the assigment hand out
-         *      
-         *      the constutor contains the main funcitonality.
-         */
-        class ATM
-        {
-            //local referance to the array of accounts
-            private Account[] ac;
-
-            //this is a referance to the account that is being used
-            private Account activeAccount = null;
-
-            // the atm constructor takes an array of account objects as a referance
-            public ATM(Account[] ac)
-            {
-                this.ac = ac;
-
-                // an infanite loop to keep the flow of controll going on and on
-                while (true)
-                {
-
-                    //ask for account number and store result in acctiveAccount (null if no match found)
-                    activeAccount = this.findAccount();
-
-                    if (activeAccount != null)
-                    {
-                        //if the account is found check the pin 
-                        if (activeAccount.checkPin(this.promptForPin()))
-                        {
-                            //if the pin is a match give the options to do stuff to the account (take money out, view balance, exit)
-                            dispOptions();
-                        }
-                    }
-                    else
-                    {   //if the account number entered is not found let the user know!
-                        Console.WriteLine("no matching account found.");
-                    }
-
-                    //wipes all text from the console
-                    Console.Clear();
-                }
-
-
-            }
-
-            /*
-             *    this method promts for the input of an account number
-             *    the string input is then converted to an int
-             *    a for loop is used to check the enterd account number
-             *    against those held in the account array
-             *    if a match is found a referance to the match is returned
-             *    if the for loop completest with no match we return null
-             * 
-             */
-            private Account findAccount()
-            {
-                Console.WriteLine("enter your account number..");
-
-                int input = Convert.ToInt32(Console.ReadLine());
-
-                for (int i = 0; i < this.ac.Length; i++)
-                {
-                    if (ac[i].getAccountNum() == input)
-                    {
-                        return ac[i];
-                    }
-                }
-
-                return null;
-            }
-            /*
-             * 
-             *  this jsut promt the use to enter a pin number
-             *  
-             * returns the string entered converted to an int
-             * 
-             */
-            private int promptForPin()
-            {
-                Console.WriteLine("enter pin:");
-                String str = Console.ReadLine();
-                int pinNumEntered = Convert.ToInt32(str);
-                return pinNumEntered;
-            }
-
-            /*
-             * 
-             *  give the use the options to do with the accoutn
-             *  
-             *  promt for input
-             *  and defer to appropriate method based on input
-             *  
-             */
-            private void dispOptions()
-            {
-                Console.WriteLine("1> take out cash");
-                Console.WriteLine("2> balance");
-                Console.WriteLine("3> exit");
-
-                int input = Convert.ToInt32(Console.ReadLine());
-
-                if (input == 1)
-                {
-                    dispWithdraw();
-                }
-                else if (input == 2)
-                {
-                    dispBalance();
-                }
-                else if (input == 3)
-                {
-
-
-                }
-                else
-                {
-
-                }
-
-            }
-
-            /*
-             * 
-             * offer withdrawable amounts
-             * 
-             * based on input attempt to withraw the corosponding amount of money
-             * 
-             */
-            private void dispWithdraw()
-            {
-                Console.WriteLine("1> 10");
-                Console.WriteLine("2> 50");
-                Console.WriteLine("3> 500");
-
-                int input = Convert.ToInt32(Console.ReadLine());
-
-                if (input > 0 && input < 4)
-                {
-
-                    //opiton one is entered by the user
-                    if (input == 1)
-                    {
-
-                        //attempt to decrement account by 10 punds
-                        if (activeAccount.decrementBalance(10))
-                        {
-                            //if this is possible display new balance and await key press
-                            Console.WriteLine("new balance " + activeAccount.getBalance());
-                            Console.WriteLine(" (prese enter to continue)");
-                            Console.ReadLine();
-                        }
-                        else
-                        {
-                            //if this is not possible inform user and await key press
-                            Console.WriteLine("insufficent funds");
-                            Console.WriteLine(" (prese enter to continue)");
-                            Console.ReadLine();
-                        }
-                    }
-                    else if (input == 2)
-                    {
-                        if (activeAccount.decrementBalance(50))
-                        {
-                            Console.WriteLine("new balance " + activeAccount.getBalance());
-                            Console.WriteLine(" (prese enter to continue)");
-                            Console.ReadLine();
-                        }
-                        else
-                        {
-                            Console.WriteLine("insufficent funds");
-                            Console.WriteLine(" (prese enter to continue)");
-                            Console.ReadLine();
-                        }
-                    }
-                    else if (input == 3)
-                    {
-                        if (activeAccount.decrementBalance(500))
-                        {
-                            Console.WriteLine("new balance " + activeAccount.getBalance());
-                            Console.WriteLine(" (prese enter to continue)");
-                            Console.ReadLine();
-                        }
-                        else
-                        {
-                            Console.WriteLine("insufficent funds");
-                            Console.WriteLine(" (prese enter to continue)");
-                            Console.ReadLine();
-                        }
-                    }
-                }
-            }
-            /*
-             *  display balance of activeAccount and await keypress
-             *  
-             */
-            private void dispBalance()
-            {
-                if (this.activeAccount != null)
-                {
-                    Console.WriteLine(" your current balance is : " + activeAccount.getBalance());
-                    Console.WriteLine(" (prese enter to continue)");
-                    Console.ReadLine();
-                }
-            }
-
         }
 
         private void BtnKey1_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(1);
+            TxtInput.AppendText("1");
         }
 
         private void BtnKey2_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(2);
+            TxtInput.AppendText("2");
         }
 
         private void BtnKey3_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(3);
+            TxtInput.AppendText("3");
         }
 
         private void BtnKey4_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(4);
+            TxtInput.AppendText("4");
         }
 
         private void BtnKey5_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(5);
+            TxtInput.AppendText("5");
         }
 
         private void BtnKey6_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(6);
+            TxtInput.AppendText("6");
         }
 
         private void BtnKey7_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(7);
+            TxtInput.AppendText("7");
         }
 
         private void BtnKey8_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(8);
+            TxtInput.AppendText("8");
         }
 
         private void BtnKey9_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(9);
+            TxtInput.AppendText("9");
         }
 
         private void BtnKey0_Click(object sender, EventArgs e)
         {
-            accountKeyValidation(0);
-        }
-
-        private void accountKeyValidation(int num)
-        {
-            if (playerInput.Length < 7)
-            {
-                playerInput = playerInput.Concat(new[] { num }).ToArray();
-            }
-
-            LblInput.Text = Convert.ToString(String.Join("", playerInput));
+            TxtInput.AppendText("0");
         }
 
         private void BtnKeyEnter_Click(object sender, EventArgs e)
         {
-            String temp;
-            if (playerInput.Length == 7)
+            LblInput.Text = "";
+            if (state == "account" && TxtInput.TextLength == 6)
             {
-                LblInput.Text = "";
-                temp = Convert.ToString(String.Join("", playerInput));
-                fullInput = Convert.ToInt32(temp);
+                for (int i = 0; i < 3; i++)
+                {
+                    if (account1[i].getAccountNum() == Convert.ToInt32(TxtInput.Text))
+                    {
+                        LblInstruction.Text = "Enter pin number";
+                        LblInput.Text = "Account found";
+                        accountNum = i;
+                        state = "pin";
+                    }
+                }
+
+                if (state == "account")
+                {
+                    LblInput.Text = "Invalid account number";
+                }
+
             }
+
+            else if (state == "account" && TxtInput.TextLength != 6)
+            {
+                LblInput.Text = "Account number must be 6 digits long";
+            }
+
+            else if (state == "pin" && TxtInput.TextLength == 4)
+            {
+                if (account1[accountNum].checkPin(Convert.ToInt32(TxtInput.Text)) == true)
+                {
+                    state = "balance";
+                    LblInstruction.Text = "What would you like to do:\n[1] View your balance\n[2] Take out money\n[3] Exit";
+                    LblInput.Text = "Correct pin entered";
+                }
+
+                if (state == "pin")
+                {
+                    LblInput.Text = "Invalid pin number";
+                }
+            }
+            else if (state == "pin" && TxtInput.TextLength != 4)
+            {
+                LblInput.Text = "Pin must be 4 digits long";
+            }
+
+            else if (state == "balance" && TxtInput.TextLength == 1)
+            {
+                LblInstruction.Text = "What would you like to do:\n[1] View your balance\n[2] Take out money\n[3] Exit";
+                if (TxtInput.Text == "1")
+                {
+                    lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+                }
+
+                else if (TxtInput.Text == "2")
+                {
+                    lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+                    LblInstruction.Text = "How much money would you like to take out";
+                    state = "takeOut";
+                }
+                else if (TxtInput.Text == "3")
+                {
+                    state = "account";
+                    accountNum = 100;
+                    LblInput.Text = "Logged out account";
+                    LblInstruction.Text = "Enter account number:";
+                    lblBalance.Text = "";
+                }
+            }
+
+            else if (state == "balance" && TxtInput.TextLength != 1)
+            {
+                LblInput.Text = "Invalid input";
+            }
+
+            else if (state == "takeOut")
+            {
+                if (account1[accountNum].decrementBalance(Convert.ToInt32(TxtInput.Text)) == true)
+                {
+                    int newBal;
+                    newBal = account1[accountNum].getBalance() - Convert.ToInt32(TxtInput.Text);
+                    account1[accountNum].setBalance(newBal);
+                    lblBalance.Text = "Your new balance is " + Convert.ToString(account1[accountNum].getBalance());
+                    state = "balance";
+                }
+                else
+                {
+                    LblInput.Text = "Insufficient funds";
+                }
+            }
+
+            TxtInput.Clear();
+        }
+
+        private void BtnKeyCancel_Click(object sender, EventArgs e)
+        {
+            TxtInput.Clear();
         }
     }
 }

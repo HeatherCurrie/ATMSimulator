@@ -44,6 +44,8 @@ namespace ATMSimulator
             this.LblTitle = new System.Windows.Forms.Label();
             this.LblInstruction = new System.Windows.Forms.Label();
             this.LblInput = new System.Windows.Forms.Label();
+            this.TxtInput = new System.Windows.Forms.TextBox();
+            this.lblBalance = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnKey1
@@ -166,6 +168,7 @@ namespace ATMSimulator
             this.BtnKeyCancel.TabIndex = 11;
             this.BtnKeyCancel.Text = "Cancel";
             this.BtnKeyCancel.UseVisualStyleBackColor = false;
+            this.BtnKeyCancel.Click += new System.EventHandler(this.BtnKeyCancel_Click);
             // 
             // LblTitle
             // 
@@ -180,24 +183,42 @@ namespace ATMSimulator
             // LblInstruction
             // 
             this.LblInstruction.AutoSize = true;
-            this.LblInstruction.Location = new System.Drawing.Point(321, 108);
+            this.LblInstruction.Location = new System.Drawing.Point(317, 108);
             this.LblInstruction.Name = "LblInstruction";
-            this.LblInstruction.Size = new System.Drawing.Size(0, 17);
+            this.LblInstruction.Size = new System.Drawing.Size(152, 17);
             this.LblInstruction.TabIndex = 15;
+            this.LblInstruction.Text = "Enter account number:";
             // 
             // LblInput
             // 
             this.LblInput.AutoSize = true;
-            this.LblInput.Location = new System.Drawing.Point(140, 354);
+            this.LblInput.Location = new System.Drawing.Point(137, 327);
             this.LblInput.Name = "LblInput";
             this.LblInput.Size = new System.Drawing.Size(0, 17);
             this.LblInput.TabIndex = 16;
             // 
-            // Form1
+            // TxtInput
+            // 
+            this.TxtInput.Location = new System.Drawing.Point(140, 358);
+            this.TxtInput.Name = "TxtInput";
+            this.TxtInput.Size = new System.Drawing.Size(100, 22);
+            this.TxtInput.TabIndex = 17;
+            // 
+            // lblBalance
+            // 
+            this.lblBalance.AutoSize = true;
+            this.lblBalance.Location = new System.Drawing.Point(317, 191);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(0, 17);
+            this.lblBalance.TabIndex = 18;
+            // 
+            // ATMWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 753);
+            this.Controls.Add(this.lblBalance);
+            this.Controls.Add(this.TxtInput);
             this.Controls.Add(this.LblInput);
             this.Controls.Add(this.LblInstruction);
             this.Controls.Add(this.LblTitle);
@@ -213,7 +234,7 @@ namespace ATMSimulator
             this.Controls.Add(this.BtnKey2);
             this.Controls.Add(this.BtnKey3);
             this.Controls.Add(this.BtnKey1);
-            this.Name = "Form1";
+            this.Name = "ATMWindow";
             this.Text = "ATM Simulator 1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,6 +258,8 @@ namespace ATMSimulator
         private System.Windows.Forms.Label LblTitle;
         private System.Windows.Forms.Label LblInstruction;
         private System.Windows.Forms.Label LblInput;
+        private System.Windows.Forms.TextBox TxtInput;
+        private System.Windows.Forms.Label lblBalance;
     }
 }
 
