@@ -260,5 +260,15 @@ namespace ATMSimulator
             ATMWindow form = new ATMWindow(account1);
             form.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
