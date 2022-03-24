@@ -80,10 +80,10 @@ namespace ATMSimulator
             this.BtnKey1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey1.Location = new System.Drawing.Point(138, 353);
-            this.BtnKey1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey1.Location = new System.Drawing.Point(184, 434);
+            this.BtnKey1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey1.Name = "BtnKey1";
-            this.BtnKey1.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey1.Size = new System.Drawing.Size(51, 50);
             this.BtnKey1.TabIndex = 0;
             this.BtnKey1.Text = "1";
             this.BtnKey1.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@ namespace ATMSimulator
             this.BtnKey3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey3.Location = new System.Drawing.Point(241, 353);
-            this.BtnKey3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey3.Location = new System.Drawing.Point(321, 434);
+            this.BtnKey3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey3.Name = "BtnKey3";
-            this.BtnKey3.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey3.Size = new System.Drawing.Size(51, 50);
             this.BtnKey3.TabIndex = 1;
             this.BtnKey3.Text = "3";
             this.BtnKey3.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@ namespace ATMSimulator
             this.BtnKey2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey2.Location = new System.Drawing.Point(190, 353);
-            this.BtnKey2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey2.Location = new System.Drawing.Point(253, 434);
+            this.BtnKey2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey2.Name = "BtnKey2";
-            this.BtnKey2.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey2.Size = new System.Drawing.Size(51, 50);
             this.BtnKey2.TabIndex = 2;
             this.BtnKey2.Text = "2";
             this.BtnKey2.UseVisualStyleBackColor = true;
@@ -122,10 +122,10 @@ namespace ATMSimulator
             this.BtnKey7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey7.Location = new System.Drawing.Point(138, 474);
-            this.BtnKey7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey7.Location = new System.Drawing.Point(184, 583);
+            this.BtnKey7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey7.Name = "BtnKey7";
-            this.BtnKey7.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey7.Size = new System.Drawing.Size(51, 50);
             this.BtnKey7.TabIndex = 3;
             this.BtnKey7.Text = "7";
             this.BtnKey7.UseVisualStyleBackColor = true;
@@ -136,10 +136,10 @@ namespace ATMSimulator
             this.BtnKey6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey6.Location = new System.Drawing.Point(241, 414);
-            this.BtnKey6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey6.Location = new System.Drawing.Point(321, 510);
+            this.BtnKey6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey6.Name = "BtnKey6";
-            this.BtnKey6.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey6.Size = new System.Drawing.Size(51, 50);
             this.BtnKey6.TabIndex = 4;
             this.BtnKey6.Text = "6";
             this.BtnKey6.UseVisualStyleBackColor = true;
@@ -151,10 +151,10 @@ namespace ATMSimulator
             this.BtnKey4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.BtnKey4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey4.Location = new System.Drawing.Point(138, 414);
-            this.BtnKey4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey4.Location = new System.Drawing.Point(184, 510);
+            this.BtnKey4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey4.Name = "BtnKey4";
-            this.BtnKey4.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey4.Size = new System.Drawing.Size(51, 50);
             this.BtnKey4.TabIndex = 5;
             this.BtnKey4.Text = "4";
             this.BtnKey4.UseVisualStyleBackColor = true;
@@ -165,10 +165,10 @@ namespace ATMSimulator
             this.BtnKey5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey5.Location = new System.Drawing.Point(190, 414);
-            this.BtnKey5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey5.Location = new System.Drawing.Point(253, 510);
+            this.BtnKey5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey5.Name = "BtnKey5";
-            this.BtnKey5.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey5.Size = new System.Drawing.Size(51, 50);
             this.BtnKey5.TabIndex = 6;
             this.BtnKey5.Text = "5";
             this.BtnKey5.UseVisualStyleBackColor = true;
@@ -179,10 +179,10 @@ namespace ATMSimulator
             this.BtnKey8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey8.Location = new System.Drawing.Point(190, 474);
-            this.BtnKey8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey8.Location = new System.Drawing.Point(253, 583);
+            this.BtnKey8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey8.Name = "BtnKey8";
-            this.BtnKey8.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey8.Size = new System.Drawing.Size(51, 50);
             this.BtnKey8.TabIndex = 7;
             this.BtnKey8.Text = "8";
             this.BtnKey8.UseVisualStyleBackColor = true;
@@ -193,10 +193,10 @@ namespace ATMSimulator
             this.BtnKey9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey9.Location = new System.Drawing.Point(241, 474);
-            this.BtnKey9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey9.Location = new System.Drawing.Point(321, 583);
+            this.BtnKey9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey9.Name = "BtnKey9";
-            this.BtnKey9.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey9.Size = new System.Drawing.Size(51, 50);
             this.BtnKey9.TabIndex = 8;
             this.BtnKey9.Text = "9";
             this.BtnKey9.UseVisualStyleBackColor = true;
@@ -207,10 +207,10 @@ namespace ATMSimulator
             this.BtnKey0.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnKey0.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BtnKey0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKey0.Location = new System.Drawing.Point(190, 535);
-            this.BtnKey0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKey0.Location = new System.Drawing.Point(253, 658);
+            this.BtnKey0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKey0.Name = "BtnKey0";
-            this.BtnKey0.Size = new System.Drawing.Size(38, 41);
+            this.BtnKey0.Size = new System.Drawing.Size(51, 50);
             this.BtnKey0.TabIndex = 9;
             this.BtnKey0.Text = "0";
             this.BtnKey0.UseVisualStyleBackColor = true;
@@ -222,10 +222,10 @@ namespace ATMSimulator
             this.BtnKeyEnter.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.BtnKeyEnter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.BtnKeyEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKeyEnter.Location = new System.Drawing.Point(297, 353);
-            this.BtnKeyEnter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKeyEnter.Location = new System.Drawing.Point(396, 434);
+            this.BtnKeyEnter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKeyEnter.Name = "BtnKeyEnter";
-            this.BtnKeyEnter.Size = new System.Drawing.Size(56, 41);
+            this.BtnKeyEnter.Size = new System.Drawing.Size(75, 50);
             this.BtnKeyEnter.TabIndex = 10;
             this.BtnKeyEnter.Text = "Enter";
             this.BtnKeyEnter.UseVisualStyleBackColor = false;
@@ -237,10 +237,10 @@ namespace ATMSimulator
             this.BtnKeyCancel.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnKeyCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BtnKeyCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKeyCancel.Location = new System.Drawing.Point(297, 414);
-            this.BtnKeyCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKeyCancel.Location = new System.Drawing.Point(396, 510);
+            this.BtnKeyCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKeyCancel.Name = "BtnKeyCancel";
-            this.BtnKeyCancel.Size = new System.Drawing.Size(56, 41);
+            this.BtnKeyCancel.Size = new System.Drawing.Size(75, 50);
             this.BtnKeyCancel.TabIndex = 11;
             this.BtnKeyCancel.Text = "Cancel";
             this.BtnKeyCancel.UseVisualStyleBackColor = false;
@@ -250,10 +250,9 @@ namespace ATMSimulator
             // 
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitle.Location = new System.Drawing.Point(232, 49);
-            this.LblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblTitle.Location = new System.Drawing.Point(309, 60);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(134, 24);
+            this.LblTitle.Size = new System.Drawing.Size(172, 29);
             this.LblTitle.TabIndex = 14;
             this.LblTitle.Text = "ATM Simulator";
             // 
@@ -262,37 +261,34 @@ namespace ATMSimulator
             this.LblInstruction.AutoSize = true;
             this.LblInstruction.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LblInstruction.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblInstruction.Location = new System.Drawing.Point(238, 122);
-            this.LblInstruction.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblInstruction.Location = new System.Drawing.Point(317, 150);
             this.LblInstruction.Name = "LblInstruction";
-            this.LblInstruction.Size = new System.Drawing.Size(115, 13);
+            this.LblInstruction.Size = new System.Drawing.Size(152, 17);
             this.LblInstruction.TabIndex = 15;
             this.LblInstruction.Text = "Enter account number:";
             // 
             // LblInput
             // 
             this.LblInput.AutoSize = true;
-            this.LblInput.Location = new System.Drawing.Point(255, 284);
-            this.LblInput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblInput.Location = new System.Drawing.Point(340, 350);
             this.LblInput.Name = "LblInput";
-            this.LblInput.Size = new System.Drawing.Size(0, 13);
+            this.LblInput.Size = new System.Drawing.Size(0, 17);
             this.LblInput.TabIndex = 16;
             // 
             // TxtInput
             // 
-            this.TxtInput.Location = new System.Drawing.Point(255, 148);
-            this.TxtInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtInput.Location = new System.Drawing.Point(340, 182);
+            this.TxtInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtInput.Name = "TxtInput";
-            this.TxtInput.Size = new System.Drawing.Size(76, 20);
+            this.TxtInput.Size = new System.Drawing.Size(100, 22);
             this.TxtInput.TabIndex = 17;
             // 
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
-            this.lblBalance.Location = new System.Drawing.Point(238, 193);
-            this.lblBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBalance.Location = new System.Drawing.Point(317, 238);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(0, 13);
+            this.lblBalance.Size = new System.Drawing.Size(0, 17);
             this.lblBalance.TabIndex = 18;
             // 
             // menuStrip1
@@ -303,31 +299,31 @@ namespace ATMSimulator
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(582, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(776, 28);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // aTMSimulatorToolStripMenuItem
             // 
             this.aTMSimulatorToolStripMenuItem.Name = "aTMSimulatorToolStripMenuItem";
-            this.aTMSimulatorToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.aTMSimulatorToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
             this.aTMSimulatorToolStripMenuItem.Text = "ATM Simulator";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // BtnScreen
             // 
             this.BtnScreen.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnScreen.Location = new System.Drawing.Point(105, 93);
-            this.BtnScreen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnScreen.Location = new System.Drawing.Point(140, 114);
+            this.BtnScreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnScreen.Name = "BtnScreen";
-            this.BtnScreen.Size = new System.Drawing.Size(379, 217);
+            this.BtnScreen.Size = new System.Drawing.Size(505, 267);
             this.BtnScreen.TabIndex = 20;
             this.BtnScreen.UseVisualStyleBackColor = false;
             // 
@@ -336,10 +332,10 @@ namespace ATMSimulator
             this.BtnMiddleLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnMiddleLeft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnMiddleLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMiddleLeft.Location = new System.Drawing.Point(41, 184);
-            this.BtnMiddleLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnMiddleLeft.Location = new System.Drawing.Point(55, 226);
+            this.BtnMiddleLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnMiddleLeft.Name = "BtnMiddleLeft";
-            this.BtnMiddleLeft.Size = new System.Drawing.Size(50, 35);
+            this.BtnMiddleLeft.Size = new System.Drawing.Size(67, 43);
             this.BtnMiddleLeft.TabIndex = 21;
             this.BtnMiddleLeft.UseVisualStyleBackColor = false;
             this.BtnMiddleLeft.Click += new System.EventHandler(this.BtnMiddleLeft_Click);
@@ -349,10 +345,10 @@ namespace ATMSimulator
             this.BtnBottomLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnBottomLeft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnBottomLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBottomLeft.Location = new System.Drawing.Point(41, 255);
-            this.BtnBottomLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBottomLeft.Location = new System.Drawing.Point(55, 314);
+            this.BtnBottomLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnBottomLeft.Name = "BtnBottomLeft";
-            this.BtnBottomLeft.Size = new System.Drawing.Size(50, 35);
+            this.BtnBottomLeft.Size = new System.Drawing.Size(67, 43);
             this.BtnBottomLeft.TabIndex = 22;
             this.BtnBottomLeft.UseVisualStyleBackColor = false;
             this.BtnBottomLeft.Click += new System.EventHandler(this.btnBottomLeft_Click);
@@ -362,10 +358,10 @@ namespace ATMSimulator
             this.btnBottomRight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnBottomRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBottomRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBottomRight.Location = new System.Drawing.Point(498, 255);
-            this.btnBottomRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBottomRight.Location = new System.Drawing.Point(664, 314);
+            this.btnBottomRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBottomRight.Name = "btnBottomRight";
-            this.btnBottomRight.Size = new System.Drawing.Size(50, 35);
+            this.btnBottomRight.Size = new System.Drawing.Size(67, 43);
             this.btnBottomRight.TabIndex = 23;
             this.btnBottomRight.UseVisualStyleBackColor = false;
             this.btnBottomRight.Click += new System.EventHandler(this.btnBottomRight_Click);
@@ -375,10 +371,9 @@ namespace ATMSimulator
             this.lblMiddleLeft.AutoSize = true;
             this.lblMiddleLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblMiddleLeft.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMiddleLeft.Location = new System.Drawing.Point(117, 195);
-            this.lblMiddleLeft.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMiddleLeft.Location = new System.Drawing.Point(156, 240);
             this.lblMiddleLeft.Name = "lblMiddleLeft";
-            this.lblMiddleLeft.Size = new System.Drawing.Size(0, 13);
+            this.lblMiddleLeft.Size = new System.Drawing.Size(0, 17);
             this.lblMiddleLeft.TabIndex = 24;
             // 
             // lblBottomLeft
@@ -386,10 +381,9 @@ namespace ATMSimulator
             this.lblBottomLeft.AutoSize = true;
             this.lblBottomLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblBottomLeft.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBottomLeft.Location = new System.Drawing.Point(117, 266);
-            this.lblBottomLeft.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBottomLeft.Location = new System.Drawing.Point(156, 327);
             this.lblBottomLeft.Name = "lblBottomLeft";
-            this.lblBottomLeft.Size = new System.Drawing.Size(0, 13);
+            this.lblBottomLeft.Size = new System.Drawing.Size(0, 17);
             this.lblBottomLeft.TabIndex = 25;
             // 
             // lblBottomRight
@@ -397,10 +391,9 @@ namespace ATMSimulator
             this.lblBottomRight.AutoSize = true;
             this.lblBottomRight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblBottomRight.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBottomRight.Location = new System.Drawing.Point(436, 266);
-            this.lblBottomRight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBottomRight.Location = new System.Drawing.Point(581, 327);
             this.lblBottomRight.Name = "lblBottomRight";
-            this.lblBottomRight.Size = new System.Drawing.Size(0, 13);
+            this.lblBottomRight.Size = new System.Drawing.Size(0, 17);
             this.lblBottomRight.TabIndex = 26;
             // 
             // btnMiddleRight
@@ -408,10 +401,10 @@ namespace ATMSimulator
             this.btnMiddleRight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnMiddleRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMiddleRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMiddleRight.Location = new System.Drawing.Point(498, 184);
-            this.btnMiddleRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMiddleRight.Location = new System.Drawing.Point(664, 226);
+            this.btnMiddleRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMiddleRight.Name = "btnMiddleRight";
-            this.btnMiddleRight.Size = new System.Drawing.Size(50, 35);
+            this.btnMiddleRight.Size = new System.Drawing.Size(67, 43);
             this.btnMiddleRight.TabIndex = 27;
             this.btnMiddleRight.UseVisualStyleBackColor = false;
             this.btnMiddleRight.Click += new System.EventHandler(this.btnMiddleRight_Click);
@@ -421,10 +414,10 @@ namespace ATMSimulator
             this.BtnTopRight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnTopRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnTopRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTopRight.Location = new System.Drawing.Point(498, 111);
-            this.BtnTopRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnTopRight.Location = new System.Drawing.Point(664, 137);
+            this.BtnTopRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnTopRight.Name = "BtnTopRight";
-            this.BtnTopRight.Size = new System.Drawing.Size(50, 35);
+            this.BtnTopRight.Size = new System.Drawing.Size(67, 43);
             this.BtnTopRight.TabIndex = 28;
             this.BtnTopRight.UseVisualStyleBackColor = false;
             this.BtnTopRight.Click += new System.EventHandler(this.BtnTopRight_Click);
@@ -434,10 +427,10 @@ namespace ATMSimulator
             this.btnTopLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnTopLeft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTopLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTopLeft.Location = new System.Drawing.Point(41, 111);
-            this.btnTopLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTopLeft.Location = new System.Drawing.Point(55, 137);
+            this.btnTopLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTopLeft.Name = "btnTopLeft";
-            this.btnTopLeft.Size = new System.Drawing.Size(50, 35);
+            this.btnTopLeft.Size = new System.Drawing.Size(67, 43);
             this.btnTopLeft.TabIndex = 29;
             this.btnTopLeft.UseVisualStyleBackColor = false;
             this.btnTopLeft.Click += new System.EventHandler(this.btnTopLeft_Click);
@@ -447,10 +440,9 @@ namespace ATMSimulator
             this.lblMiddleRight.AutoSize = true;
             this.lblMiddleRight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblMiddleRight.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMiddleRight.Location = new System.Drawing.Point(398, 195);
-            this.lblMiddleRight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMiddleRight.Location = new System.Drawing.Point(531, 240);
             this.lblMiddleRight.Name = "lblMiddleRight";
-            this.lblMiddleRight.Size = new System.Drawing.Size(0, 13);
+            this.lblMiddleRight.Size = new System.Drawing.Size(0, 17);
             this.lblMiddleRight.TabIndex = 30;
             // 
             // lblTopRight
@@ -458,10 +450,9 @@ namespace ATMSimulator
             this.lblTopRight.AutoSize = true;
             this.lblTopRight.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblTopRight.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTopRight.Location = new System.Drawing.Point(436, 122);
-            this.lblTopRight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTopRight.Location = new System.Drawing.Point(581, 150);
             this.lblTopRight.Name = "lblTopRight";
-            this.lblTopRight.Size = new System.Drawing.Size(0, 13);
+            this.lblTopRight.Size = new System.Drawing.Size(0, 17);
             this.lblTopRight.TabIndex = 31;
             // 
             // lblTopLeft
@@ -469,46 +460,50 @@ namespace ATMSimulator
             this.lblTopLeft.AutoSize = true;
             this.lblTopLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblTopLeft.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTopLeft.Location = new System.Drawing.Point(117, 122);
-            this.lblTopLeft.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTopLeft.Location = new System.Drawing.Point(156, 150);
             this.lblTopLeft.Name = "lblTopLeft";
-            this.lblTopLeft.Size = new System.Drawing.Size(0, 13);
+            this.lblTopLeft.Size = new System.Drawing.Size(0, 17);
             this.lblTopLeft.TabIndex = 32;
             // 
             // imgMoney
             // 
             this.imgMoney.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgMoney.InitialImage")));
-            this.imgMoney.Location = new System.Drawing.Point(384, 353);
-            this.imgMoney.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgMoney.Location = new System.Drawing.Point(512, 434);
+            this.imgMoney.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgMoney.Name = "imgMoney";
-            this.imgMoney.Size = new System.Drawing.Size(152, 102);
+            this.imgMoney.Size = new System.Drawing.Size(203, 126);
             this.imgMoney.TabIndex = 33;
             this.imgMoney.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 337);
+            this.pictureBox1.Location = new System.Drawing.Point(160, 415);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(246, 260);
+            this.pictureBox1.Size = new System.Drawing.Size(328, 320);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 76);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 94);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(558, 255);
+            this.pictureBox2.Size = new System.Drawing.Size(744, 314);
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(384, 540);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(512, 665);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.Size = new System.Drawing.Size(133, 28);
             this.button1.TabIndex = 36;
             this.button1.Text = "Get Second ATM";
             this.button1.UseVisualStyleBackColor = true;
@@ -516,9 +511,13 @@ namespace ATMSimulator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(384, 483);
+            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(512, 594);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.Size = new System.Drawing.Size(133, 28);
             this.button2.TabIndex = 37;
             this.button2.Text = "Data Race";
             this.button2.UseVisualStyleBackColor = true;
@@ -526,9 +525,13 @@ namespace ATMSimulator
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(384, 512);
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(512, 630);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 23);
+            this.button3.Size = new System.Drawing.Size(133, 28);
             this.button3.TabIndex = 38;
             this.button3.Text = "Non Data Race";
             this.button3.UseVisualStyleBackColor = true;
@@ -536,9 +539,9 @@ namespace ATMSimulator
             // 
             // ATMWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 609);
+            this.ClientSize = new System.Drawing.Size(776, 750);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -576,7 +579,7 @@ namespace ATMSimulator
             this.Controls.Add(this.BtnScreen);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ATMWindow";
             this.Text = "ATM Simulator 1";
             this.menuStrip1.ResumeLayout(false);
