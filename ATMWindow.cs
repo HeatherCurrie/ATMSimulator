@@ -249,7 +249,7 @@ namespace ATMSimulator
             lblMiddleRight.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnThread_Click(object sender, EventArgs e)
         {
             ATM2 = new Thread(new ThreadStart(atmThread2));
             ATM2.Start();

@@ -29,7 +29,6 @@ namespace ATMSimulator
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATMWindow));
             this.BtnKey1 = new System.Windows.Forms.Button();
             this.BtnKey3 = new System.Windows.Forms.Button();
             this.BtnKey2 = new System.Windows.Forms.Button();
@@ -63,12 +62,10 @@ namespace ATMSimulator
             this.lblMiddleRight = new System.Windows.Forms.Label();
             this.lblTopRight = new System.Windows.Forms.Label();
             this.lblTopLeft = new System.Windows.Forms.Label();
-            this.imgMoney = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThread = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -463,21 +460,11 @@ namespace ATMSimulator
             this.lblTopLeft.Size = new System.Drawing.Size(0, 17);
             this.lblTopLeft.TabIndex = 32;
             // 
-            // imgMoney
-            // 
-            this.imgMoney.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgMoney.InitialImage")));
-            this.imgMoney.Location = new System.Drawing.Point(512, 434);
-            this.imgMoney.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgMoney.Name = "imgMoney";
-            this.imgMoney.Size = new System.Drawing.Size(203, 126);
-            this.imgMoney.TabIndex = 33;
-            this.imgMoney.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox1.Location = new System.Drawing.Point(160, 415);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(328, 320);
             this.pictureBox1.TabIndex = 34;
@@ -487,29 +474,31 @@ namespace ATMSimulator
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox2.Location = new System.Drawing.Point(16, 94);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(744, 314);
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // btnThread
             // 
-            this.button1.Location = new System.Drawing.Point(512, 684);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnThread.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnThread.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnThread.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThread.Location = new System.Drawing.Point(512, 684);
+            this.btnThread.Name = "btnThread";
+            this.btnThread.Size = new System.Drawing.Size(87, 51);
+            this.btnThread.TabIndex = 36;
+            this.btnThread.Text = "Open ATM";
+            this.btnThread.UseVisualStyleBackColor = true;
+            this.btnThread.Click += new System.EventHandler(this.btnThread_Click);
             // 
             // ATMWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 750);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.imgMoney);
+            this.Controls.Add(this.btnThread);
             this.Controls.Add(this.lblTopLeft);
             this.Controls.Add(this.lblTopRight);
             this.Controls.Add(this.lblMiddleRight);
@@ -548,7 +537,6 @@ namespace ATMSimulator
             this.Text = "ATM Simulator 1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -591,10 +579,9 @@ namespace ATMSimulator
         private System.Windows.Forms.Label lblMiddleRight;
         private System.Windows.Forms.Label lblTopRight;
         private System.Windows.Forms.Label lblTopLeft;
-        private System.Windows.Forms.PictureBox imgMoney;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThread;
     }
 }
 
