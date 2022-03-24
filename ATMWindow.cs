@@ -169,9 +169,12 @@ namespace ATMSimulator
         {
             if (state == "takeOut")
             {
-                account1[accountNum].decrementBalance(20);
+                takeOutMoney(20);
             }
-            lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+            if (state == "balance")
+            {
+                lblBalance.Text = "Your balance is " + Convert.ToString(account1[accountNum].getBalance());
+            }
         }
 
         private void btnBottomLeft_Click(object sender, EventArgs e)
@@ -210,7 +213,7 @@ namespace ATMSimulator
                 clear();
             } else
             {
-                LblInput.Text = "Insufficent funds";
+                LblInput.Text = "Insufficent funds - Enter again";
             } 
         }
 
