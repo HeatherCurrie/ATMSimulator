@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +16,7 @@ namespace ATMSimulator
         private int accountNum;
         private String state = "account";
         private Account[] account1;
+        private Thread ATM2;
 
         public ATMWindow(Account[] ac)
         {
@@ -245,6 +247,18 @@ namespace ATMSimulator
             lblTopLeft.Text = "";
             lblTopRight.Text = "";
             lblMiddleRight.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ATM2 = new Thread(new ThreadStart(atmThread2));
+            ATM2.Start();
+        }
+
+        private void atmThread2()
+        {
+            ATMWindow form = new ATMWindow(account1);
+            form.ShowDialog();
         }
     }
 }
