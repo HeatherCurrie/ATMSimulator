@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ATMSimulator
 {
+    /*
+     * Defines an account and its functions 
+    */
     public class Account
     {
         //the attributes for the account
