@@ -13,11 +13,18 @@ namespace ATMSimulator
 {
     public partial class ATMWindow : Form
     {
+        /*
+         * Team 19 ATM Simulator Project
+         * Heather Currie
+         * Matthew Gallacher 
+         * Jonny Cormack
+         */
+
         private int accountNum;
         private String state = "account";
         private Account[] account1;
         private Thread ATM2;
-
+        
         /*
          * ATM Window Constructor
         */
@@ -363,7 +370,13 @@ namespace ATMSimulator
          */
         private void btnRace_Click(object sender, EventArgs e)
         {
-
+            SemaphoreSlim Semaphore = new SemaphoreSlim(1);
+            ATM2 = new Thread(new ThreadStart(atmThread2));
+            account1[2].decrementBalance(500);
+            Semaphore.Wait(1);
+            ATM2.Start();
+            account1[2].decrementBalance(500);
+            Semaphore.Release();
         }
 
         /*
@@ -371,7 +384,12 @@ namespace ATMSimulator
          */
         private void btnNonRace_Click(object sender, EventArgs e)
         {
-
+            // Creates new thread named ATM2 which calls atmThread2()
+            ATM2 = new Thread(new ThreadStart(atmThread2));
+            // Start Thread
+            ATM2.Start();
+            account1[2].decrementBalance(500);
+            account1[2].decrementBalance(500);
         }
     }
 }

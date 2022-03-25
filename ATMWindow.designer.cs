@@ -307,13 +307,13 @@ namespace ATMSimulator
             // aTMSimulatorToolStripMenuItem
             // 
             this.aTMSimulatorToolStripMenuItem.Name = "aTMSimulatorToolStripMenuItem";
-            this.aTMSimulatorToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
+            this.aTMSimulatorToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.aTMSimulatorToolStripMenuItem.Text = "ATM Simulator";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
